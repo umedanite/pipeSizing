@@ -24,9 +24,11 @@ def haaland(V,d,v,k):
     print(f"pressure drop per meter pd:{pd} m/m")
     print(f"pressure drop per meter pd:{1000*9.81*pd} Pa/m")
     print(f"pressure drop pd:{300*pd} m")
+    print("Freddy")
     return f, pd
 
 pd = haaland(50,150, 0.00000114, 0.00015)
 print(pd)
+
 
 # k: average roughless; heavy grade steel = 0.046
