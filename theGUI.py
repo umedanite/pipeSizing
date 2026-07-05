@@ -97,8 +97,6 @@ class MainWindow(QMainWindow):
         except ZeroDivisionError:
             self.text_edit.setText("Diameter and kinematic viscosity must be greater than zero.")
 
-
-
 app = QApplication(sys.argv)
 
 # Create a Qt widget, which will be our window.
