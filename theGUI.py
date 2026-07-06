@@ -50,16 +50,16 @@ class MainWindow(QMainWindow):
         add_widget_with_label(main_layout, self.label, 'Pipe Friction calculation')
 
         # QLineEdit
-        self.line_edit_V = QLineEdit()
+        self.line_edit_V = QLineEdit("50")
         add_widget_with_label(main_layout, self.line_edit_V, 'Volume flow (l/s):')
 
-        self.line_edit_d = QLineEdit()
+        self.line_edit_d = QLineEdit("150")
         add_widget_with_label(main_layout, self.line_edit_d, 'Pipe diameter (mm):')
 
-        self.line_edit_v = QLineEdit()
+        self.line_edit_v = QLineEdit("0.00000114")
         add_widget_with_label(main_layout, self.line_edit_v, 'Kinematic Viscosity (m2/s):')
 
-        self.line_edit_k = QLineEdit()
+        self.line_edit_k = QLineEdit("0.045")
         add_widget_with_label(main_layout, self.line_edit_k, 'Pipe roughless (mm):')
 
         # QPushButton
@@ -78,7 +78,7 @@ class MainWindow(QMainWindow):
             v = float(self.line_edit_v.text())
             k = float(self.line_edit_k.text())
 
-            u, re, f, pd = haaland(V,d,v,k)
+            u, re, f, pd = haaland(V,d,v=0.00000114,k=0.045)
 
             result_text = (
                 f"Flow velocity u: {u} m/s\n"
