@@ -16,7 +16,7 @@ if st.button("Calculate"):
     st.write(f"Reynolds number: {re:.0f}")
     st.write(f"Friction factor: {f}")
     st.write(f"Pressure drop per meter: {pd} m/m")
-    st.write(f"Pressure drop per meter: {1000 * 9.81 * pd:.2f} Pa/m"\n)
+    st.write(f"Pressure drop per meter: {1000 * 9.81 * pd:.2f} Pa/m\n")
     st.write(f"Freddy is taking a nap......ZZZZZ")
   #  st.write(f"Pressure drop over 100 m: {100 * pd:.2f} m")
     
