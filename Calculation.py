@@ -28,5 +28,4 @@ def haaland(V,d,v,k):
 
 #pd = haaland(50,150, 0.00000114, 0.00015)
 #print(pd)
-
 # k: average roughless; heavy grade steel = 0.046

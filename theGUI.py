@@ -78,7 +78,7 @@ class MainWindow(QMainWindow):
             v = float(self.line_edit_v.text())
             k = float(self.line_edit_k.text())
 
-            u, re, f, pd = haaland(V,d,v=0.00000114,k=0.045)
+            u, re, f, pd = haaland(V,d,v,k)
 
             result_text = (
                 f"Flow velocity u: {u} m/s\n"
